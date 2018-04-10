@@ -1,0 +1,28 @@
+.nm-button {
+  padding: 10px 15px;
+  border: 0;
+  outline: 0;
+  -webkit-appearance: none;
+  color: #1f2d3d;
+  background-color: #fff;
+  border: 1px solid #c4c4c4;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #20a0ff;
+    border-color: #20a0ff;
+  }
+  &--primary {
+    color: #fff;
+    background-color: #20a0ff;
+    border-color: #20a0ff;
+  }
+  &--primary:hover,
+  &--primary:focus {
+    background: #4db3ff;
+    border-color: #4db3ff;
+    color: #fff;
+  }
+}
