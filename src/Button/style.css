@@ -1,28 +1,36 @@
-.nm-button {
-  padding: 10px 15px;
-  border: 0;
-  outline: 0;
-  -webkit-appearance: none;
-  color: #1f2d3d;
-  background-color: #fff;
-  border: 1px solid #c4c4c4;
-  border-radius: 4px;
-  cursor: pointer;
+@charset 'UTF-8';
+@import '../css/var.css';
 
-  &:hover,
-  &:focus {
-    color: #20a0ff;
-    border-color: #20a0ff;
+@component-namespace nm {
+  @b button {
+    padding: 10px 15px;
+    border: 0;
+    outline: 0;
+    -webkit-appearance: none;
+
+    color: var(--color-base-black);
+    background-color: #fff;
+    border: 1px solid var(--color-base-silver);
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      color: var(--color-primary);
+      border-color: var(--color-primary);
+    }
   }
-  &--primary {
+
+  @m primary {
     color: #fff;
-    background-color: #20a0ff;
-    border-color: #20a0ff;
-  }
-  &--primary:hover,
-  &--primary:focus {
-    background: #4db3ff;
-    border-color: #4db3ff;
-    color: #fff;
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+
+    &:hover,
+    &:focus {
+      background: var(--color-secondary);
+      border-color: var(--color-secondary);
+      color: #fff;
+    }
   }
 }
